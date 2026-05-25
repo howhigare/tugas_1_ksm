@@ -1,18 +1,67 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-header, footer{
-    background-color: #0000;
-    color: #fff;
-    width: 100%;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 20px 12%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    font-size: 22px;
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.logo span { 
+    color: pink;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    padding-bottom: 4px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: pink;
+    border-bottom: 3px solid pink;
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: pink; 
+    color: white;               
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: transparent;
+    border-color: pink;
+    color: pink;
 }
