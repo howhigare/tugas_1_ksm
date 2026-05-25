@@ -5,37 +5,181 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Tugas 1 ksm</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Ay</span>la</a>
+        <a href="#home" class="logo"><span>Ay</span>la</a>
 
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Experience</a>
-            <!-- <a href="#">apa ya</a> -->
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
         </nav>
 
-        <a href="#" class="contact">Contact Me!</a>
+        <a href="#footer" class="contact">Contact Me!</a>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello!</h3>
-
             <h1>Aku<span> Ayla<br></span>Mahasiswa FIK angkatan 2025</h1>
-            <p>Perkenalkan aku Ayla Syafa Syahira bisa dipanggil ayla or shira, mahasiswa
-                Fakultas Ilmu Komputer jurusan Informatika angkatan 2025. Aku lulusan SMK Raden 
-                Umar Said Kudus dengan jurusan PPLG/RPL. Punya minat besar terhadap perkembangan AI dan web developer </p>
-
+            <p>Perkenalkan aku Ayla Syafa Syahira bisa dipanggil Ayla or Shira, mahasiswa
+                Fakultas Ilmu Komputer jurusan Informatika angkatan 2025. Aku lulusan SMK Raden
+                Umar Said Kudus dengan jurusan PPLG/RPL. Punya minat besar terhadap perkembangan AI dan web developer.
+            </p>
         </div>
-        
-            <div class="img-box">
-                <img src="images/img1.jpg" alt="myfotogwe">
-            </div>
+
+        <div class="img-box">
+            <img src="images/img1.jpg" alt="myfotogwe">
+        </div>
     </section>
+
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>Riwayat <span>Pendidikan</span></h2>
+        </div>
+
+        <div class="education-timeline">
+            <div class="edu-card">
+                <div class="edu-icon"></div>
+                <div class="edu-info">
+                    <h3>SD Perjuangan Terpadu</h3>
+                </div>
+            </div>
+
+            <div class="edu-arrow">></div>
+
+            <div class="edu-card">
+                <div class="edu-icon"></div>
+                <div class="edu-info">
+                    <h3>SMP Al Araf Indonesia</h3>
+                </div>
+            </div>
+
+            <div class="edu-arrow"><i class="fas fa-chevron-right"></i></div>
+
+            <div class="edu-card">
+                <div class="edu-icon"></div>
+                <div class="edu-info">
+                    <h3>SMK Raden Umar Said Kudus</h3>
+                </div>
+            </div>
+
+            <div class="edu-arrow"><i class="fas fa-chevron-right"></i></div>
+
+            <div class="edu-card active-edu">
+                <div class="edu-icon"></i></div>
+                <div class="edu-info">
+                    <h3>Universitas Pembangunan Negeri Jakarta</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-title">
+            <h2>Keterampilan <span>& Bahasa</span></h2>
+        </div>
+
+        <div class="skills-wrapper">
+            <div class="skills-group">
+                <h3> Bahasa Pemrograman</h3>
+                <div class="skill-tags">
+                    <span class="tag">Dart</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML & CSS</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Framework & Tools</h3>
+                <div class="skill-tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">React JS</span>
+                    <span class="tag">& beberapa framework lainnya</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3>Hobi</h3>
+                <div class="skill-tags">
+                    <span class="tag hobby"> Bermain sedikit gitar hehe</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <h3> Bahasa yang digunakan</h3>
+                <div class="skill-tags">
+                    <span class="tag lang">🇮🇩 Indonesia</span>
+                    <span class="tag lang">🇬🇧 Inggris</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="section-title">
+            <h2>Pengalaman <span>Organisasi & Kerja</span></h2>
+        </div>
+
+        <div class="exp-card-wrapper">
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div>
+                        <h3>Junior Software Developer</h3>
+                    </div>
+                </div>
+                <p class="exp-desc">
+                    aku pernah magang selama 6 bulan(pkl) sebagai junior software engineer di software house
+                    'Esoftplay' di situ kami membuat web dan aplikasi berupa e-rapor. dengan menggunakan framework
+                    esoftplaynya sendiri. Bahasa Pemrograman yang dikuasai: dart menggunakan framework flutter untuk apk android,
+                    react js untuk website dan bbrp framework lainnya!
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <a href="#home" class="footer-logo"><span>Ay</span>la</a>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/ayla-syafa-syahira/" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/syahirayla/" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/howhigare" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 Ayla Syafa Syahira. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section[id], footer[id]');
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
+
+</html>
